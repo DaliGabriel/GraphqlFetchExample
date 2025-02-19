@@ -1,0 +1,91 @@
+#root {
+  width: 100%;
+}
+
+.main-title {
+  text-align: center;
+}
+/* From Uiverse.io by Smit-Prajapati */
+.card {
+  width: 90%; /* Make the card responsive by setting width to a percentage */
+  max-width: 300px; /* Limit the maximum width */
+  border-radius: 20px;
+  background: #1b233d;
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 20px auto !important; /* Center the card horizontally */
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.bottom-section {
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Stack title and image vertically */
+  align-items: center; /* Center items horizontally */
+}
+.title {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px; /* Add spacing between title and image */
+}
+.bottom-section img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+  display: block; /* Prevent image from overflowing */
+}
+
+/* From Uiverse.io by adamgiebl */
+.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #b3d4fc;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: #6793fb;
+    box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+  }
+
+  100% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+}
